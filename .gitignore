@@ -1,0 +1,32 @@
+## .gitignore for ASP.NET MVC / Windows Azure development
+## Original file: https://gist.github.com/3318347 by @codingoutloud
+## Github doc on ignoring files: https://help.github.com/articles/ignoring-files
+## The man page for .gitignore (referenced by github): http://man.cx/gitignore
+## Of possible interest (can be complex): https://github.com/github/gitignore
+
+# Troubleshooting
+# 1. If you add a .gitignore file to an existing repo, you may want to force it to act as though the .gitignore was in force the whole time. 
+## http://stackoverflow.com/questions/1139762/gitignore-file-not-ignoring
+# 2. If you get an Unsynchronized Commit error in the GitHub Windows client, you may want to try this.
+## http://stackoverflow.com/questions/8174324/github-unsynchronized-commit
+
+# don't ignore me!
+!.gitignore
+
+# Visual Studio build objects
+bin/
+csx/
+obj/
+
+# Visual Studio user-specific files
+*.suo
+*.user
+
+# NuGet (assuming you let NuGet restore missing packages: http://docs.nuget.org/docs/workflows/using-nuget-without-committing-packages/)
+packages/
+
+# ReSharper
+_ReSharper*/
+
+# NCrunch
+*ncrunch*

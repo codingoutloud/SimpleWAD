@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="SimpleWindowsAzureDiagnostics" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*" schemaVersion="2012-05.1.7">
+  <Role name="MvcWebRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=simplewad;AccountKey=2YlqX8locjx/Tx9oAg6wO+h+A14QZWsk5ex9jLqo18JV/znqlRPbeHeLZJXwkvXTAl+iGEkOg6B6Yvaq6aIbxg==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="codingoutloud" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEBhG6kseYwusQ6C57kwzirkwDQYJKoZIhvcNAQEBBQAEggEAm2wMbV6XodKkG3LC5rBnV26t///JtxZ/sxbx2A7hhCobWdbe3SSfce9W7QZcLeL0g2149MeLKmHMuveVjVZVUtYtKVKVNhnoc8j0j5UYxjtb6m9Q4EuSiEVr3iVyU68AJiZ3txPPoI/CHiNX5MuVBvYzQAo0SfW2PIK+4hPDOLGyYT6kc/eqfVvsZlKC0eKNlWUm6qmLLmxffbPl7ARCt+gUXXzgi00ER3qfmjsZp0mvK4pLMDEtZQmjLuGGcFfkx0BNIKU7XPYlhD++PNVym6dXKt886955cpz89jMovMsQ+InOWxrABxJlK0KzbO6oBmfzyao1dPy115PudREFsDAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECNJ1YVfMgxsGgBB1uou8oH1U2tXsq+OFqJZ7" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-09-22T23:59:59.0000000-04:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="3CEB9B2F9F81CE4290794801F5951860E30843C6" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
